@@ -1,0 +1,16 @@
+TYLKO W BODY
+
+**<h1></h1>** - naglowek pierwszego stopnia
+**<h2></h2>** - naglowek stopnia drugiego itd. itp
+**<p></p>** - paragraf
+**<ol> <li></li> </ol>** - uporzadkowana lista
+**<ul> <li></li> </ul>** - nieuporzadkowana lista
+**<table></table> -** tabela
+	**<tr></tr> - **wiersz w tabeli (table row)
+	**<td></td> - **informacje w tabeli (table data)
+**<caption>...</caption> - **opis tabeli
+
+
+
+https://www.w3schools.com/
+
