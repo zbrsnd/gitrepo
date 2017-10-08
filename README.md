@@ -1,1 +1,0 @@
-Repozytorium z moimi kodami 
