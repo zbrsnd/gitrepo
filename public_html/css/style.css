@@ -1,0 +1,62 @@
+/*
+ font-family: arial, tahoma, serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1,15em;
+*/
+
+
+body {
+    font: normal normal 12pt/1.15em arial, tahoma, serif;
+    background-color: #f7f5f4;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.53em
+}
+
+
+div { 
+    font-family: arial;
+    font-size: 1,3em;
+    color: navy;
+}
+
+p {
+    font-size: 14pt;
+    line-height: 1.5em;
+}
+
+.czerwony{
+    color: #bc2c21;
+    
+}
+
+.pogrubiony{
+    font-weight: bold;
+}
+
+.pochylony{
+    font-style: italic;
+}
+
+.wyrozniony{
+    color: #bc2c21;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p.srodek{
+    text-align: center;
+    clear: both;
+}
+
+img{
+    float: right;
+}
+
