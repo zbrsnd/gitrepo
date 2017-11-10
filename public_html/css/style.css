@@ -8,9 +8,29 @@
 
 
 body {
-    font: normal normal 12pt/1.15em arial, tahoma, serif;
+    font: normal normal 12pt/1.15em arial, tahoma, sans-serif;
     background-color: #f7f5f4;
 }
+
+.header {
+    padding: 20px 10px;
+    border: 10px solid red;
+    border-bottom: 10px dashed green;
+    margin: 30px;
+}
+
+.header img {
+    display:block;
+    float:none;
+    border: 15px solid yellow;
+}
+
+#header img {
+    border: 10px solid yellow;
+    
+}
+
+#header
 
 h1 {
     font-size: 3em;
@@ -60,3 +80,12 @@ img{
     float: right;
 }
 
+
+#header {
+    /*lewa wartosc top bottom, prawa right left
+    przy 4 wartosciach - top right bottom left*/
+    padding: 40px 20px 10px 5px;
+    margin: 10px 5px 15px 20px;
+    border-bottom: dotted blue;
+    
+}
