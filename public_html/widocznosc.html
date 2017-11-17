@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="wDesign">
+	<title>Widoczność elementów</title>
+  </head>
+  <style type="text/css">
+    .hide2 { display: none; }
+    .hide3 { visibility: hidden; }
+    .hide1 {
+      position: absolute; top:-1000px; left: -1000px;
+      background-color: green;
+
+    }
+  </style>
+
+  <body>
+    <h1>Widoczność elementów</h1>
+  <div id="warstwa1" class="hide1">
+    <p>1) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deleniti alias, facilis iste quae, eius, facere itaque in vero nulla quam eveniet, optio ipsam laudantium nesciunt vitae incidunt minima id.</p>
+  </div>
+  <input type="button" value="Odkryj 1" onclick="odkryj1()";>
+    <p class="hide2" id="akapit2">2) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem eaque, dicta consectetur ea esse a sed at delectus praesentium eum minus voluptatum sit inventore non cupiditate, provident rerum distinctio tenetur.</p>
+  <button onclick="odkryj2();">Odkryj 2</button>
+  <button onclick="schowaj2()">Schowaj 2</button>
+  <p class="hide3" id="akapit3">3) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur officiis, ad velit earum? Beatae aspernatur laborum suscipit voluptate inventore maxime facilis, magnam cum voluptatem vitae ab quos facere similique magni!</p>
+  <button onclick="odkryj3();">Odkryj 3</button>
+  <button onclick="schowaj3();">Schowaj 3</button>
+  <p>4) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<script type="text/javascript">
+  function odkryj2(){
+    obj = document.getElementById('akapit2');
+    obj.style.display = 'block';
+
+  }
+
+  function schowaj2(){
+    obj = document.getElementById('akapit2')
+    obj.style.display = 'none';
+  }
+
+  function odkryj3(){
+    obj = document.getElementById('akapit3');
+    obj.style.visibility = 'visible';
+  }
+
+  function schowaj3(){
+    obj = document.getElementById('akapit3');
+    obj.style.visibility = 'hidden';
+  }
+
+  function odkryj1(){
+    obj = document.getElementById('warstwa1');
+    obj.style.top = 0;
+    obj.style.left = 0;
+    obj.style.position = 'static' ;
+  }
+
+
+
+
+</script>
+
+</body>
+
+
+</html>
