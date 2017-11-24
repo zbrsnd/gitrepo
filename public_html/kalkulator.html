@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="utf-8" />
+<title>Kalkulator</title>
+<style>
+    body {
+        background-color: #00000;
+    }
+    h1 {
+        background-color: yellow;
+    }
+</style>
+</head>
+
+<body>
+    <h1 id="przywitanie">Witam serdecznie.</h1>
+        <p>Na początek pola tekstowe:</p>
+            <label for="liczba1">Liczba 1:</label>
+            <input type="text" id="liczba1">
+            <label for="liczba2">Liczba 2:</label>
+            <input type="text" id="liczba2">
+            <button onclick="dodaj();">Dodaj</button>
+            <button onclick="odejmij();">Odejmij</button>
+            <button onclick="pomnoz();">Pomnóż</button>
+            <button onclick="podziel();">Podziel</button>
+<script>
+function dodaj(){
+    var liczba1 = document.getElementById("liczba1").value;
+    var liczba2 = document.getElementById("liczba2").value;
+    alert("Suma: " + (liczba1+liczba2));
+}
+
+function odejmij(){
+var liczba1 = document.getElementById("liczba1").value;
+var liczba2 = document.getElementById("liczba2").value;
+alert("Różnica: " + (liczba1-liczba2));
+}
+
+function pomnoz(){
+var liczba1 = document.getElementById("liczba1").value;
+var liczba2 = document.getElementById("liczba2").value;
+alert("Iloczyn: " + (liczba1*liczba2));
+}
+
+function podziel(){
+var liczba1 = document.getElementById("liczba1").value;
+var liczba2 = document.getElementById("liczba2").value;
+if (parseInt(liczba2) == 0 {
+alert("Nie wolno dzielić przez 0!)}
+alert("Iloraz: " + (liczba1/liczba2));}
+</script>
+</body>
+
+</html>
