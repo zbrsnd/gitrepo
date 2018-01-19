@@ -1,0 +1,8 @@
+$(document).ready(function(){})
+--kiedy **dokument** zostanie załadowany wykonaj **czynność (funkcję)**
+
+**.val** - wartosc
+**.text** - tekst
+**.html** - zawartosc html
+**.attr** - odczytywanie atrybutow
+**document.location** - pokazuje zrodlo skad dokument zostal zaladowany
