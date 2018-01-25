@@ -1,0 +1,49 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-22T09:55:25+01:00
+
+====== Bazy danych ======
+
+
+**Baza danych** to uporządkowany zbiór informacji.
+
+**Rekord** to zbiór pól w obrębie tabeli <dot. jednego obiektu>
+
+Informacje nie powinny się powtarzać:
+**DOBRZE **zaprojektowana baza danych powinna:
+
+//zajmować minimum pamieci (miejsca) - mozna szybciej przeszukiwac, analizowac//
+//być wydajna//
+//posiadać spójność danych//
+
+**RELACYJNA BAZA DANYCH** to baza, która powstaje poprzez przeanalizowanie danych (informacje można umieścić w kilku tabelach, które można połączyć //relacjami//).
+
+====== Programy ======
+
+Microsoft Access  (.accdb)
+[[LibreOffice]] Base  (.odb)
+[[SQLiteStudio]] (.db; .sqlite etc)
+
+**Język SQL** - Strukturalny język zapytań
+
+====== Silniki baz danych ======
+
+[[MySQL]]
+[[MariaDB]]
+[[PostgreSQL]]
+Oracle
+SQLite
+
+====== Typy danych ======
+
+//LICZBOWE//
+integer - liczby całkowite
+float/real - liczby zmiennoprzecinkowe
+
+//TEKSTOWE//
+text [20], varchar [20], string
+
+====== Data i czas ======
+
+Date - data, np. w formacie ISO, np. 2015-01-16
+[[DateTime]] - data i czas
