@@ -4,6 +4,10 @@ Creation-Date: 2018-01-19T13:11:22+01:00
 
 ====== jquery ======
 Created piątek 19 styczeń 2018
+**$(x).operacja(function(){});**
+
+**$(x).operacja(()=>);**
+
 
 $("h1").each(function(){})
 --dostęp do każdego pasującego akapitu
@@ -11,4 +15,5 @@ $("h1").each(function(){})
 document.location - 
 .html
 .text
-.
+.val
+

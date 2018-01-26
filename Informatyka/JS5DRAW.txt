@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-26T12:07:38+01:00
+
+====== JS5DRAW ======
+Created piątek 26 styczeń 2018
+
+**POCZĄTEK UKŁADU - LEWY GÓRNY RÓG (PUNKT 0,0)**
+ 
+**OBIEKT CANVAS -  **służy do obsługi grafiki
+<canvas><canvas>
+
+https://p5js.org/reference/#/p5/rect
