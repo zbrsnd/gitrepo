@@ -47,3 +47,12 @@ text [20], varchar [20], string
 
 Date - data, np. w formacie ISO, np. 2015-01-16
 [[DateTime]] - data i czas
+
+====== Relacyjna Baza Danych ======
+
+**KLUCZ GŁÓWNY (ang. PRIMARY KEY) - ** POLE, KTÓREGO WARTOŚĆ JEST UNIKALNA W OBRĘBIE TABELI, TZN. ŻE KLUCZ GŁÓWNY JEDNOZNACZNIE IDENTYFIKUJE REKORD TABELI
+**KLUCZ OBCY (ang. SECONDARY KEY, REFRENCES table_name)** - KLUCZ OBCY POBIERA WARTOŚCI Z KLUCZA GŁÓWNEGO, ŁĄCZY TABELE ZALEŻNE Z TABELĄ GŁÓWNĄ
+**KLUCZ GŁÓWNY** ma mieć taki sam typ danych jak **KLUCZ OBCY**
+RELACJA **JEDEN DO WIELU**
+
+**AUTOINKREMENTACJA -** SAMOCZYNNE PODNOSZENIE WARTOSCI 
