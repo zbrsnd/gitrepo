@@ -21,14 +21,14 @@ Informacje nie powinny się powtarzać:
 ====== Programy ======
 
 Microsoft Access  (.accdb)
-[[LibreOffice]] Base  (.odb)
+LibreOffice Base  (.odb)
 [[SQLiteStudio]] (.db; .sqlite etc)
 
 **Język SQL** - Strukturalny język zapytań
 
 ====== Silniki baz danych ======
 
-[[MySQL]]
+MySQL
 [[MariaDB]]
 [[PostgreSQL]]
 Oracle
@@ -46,7 +46,7 @@ text [20], varchar [20], string
 ====== Data i czas ======
 
 Date - data, np. w formacie ISO, np. 2015-01-16
-[[DateTime]] - data i czas
+DateTime - data i czas
 
 ====== Relacyjna Baza Danych ======
 
