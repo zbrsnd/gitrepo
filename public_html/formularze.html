@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Obsługa formularzy</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <form name="formularz" id="formularz">
+      <table class="table">
+
+        <tr>
+          <td><label for="imie">Imię:</label></td>
+          <td><input type="text" name="imie" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label for="naziwsko">Nazwisko:</label></td>
+          <td><input type="text" name="nazwisko" value=""></td>
+        </tr>
+    </table>
+
+      <input type="submit" name="" value="Prześlij">
+      <input type="reset" name="" value="Resetuj">
+
+<fieldset>
+  <legend>Wybierz płeć</legend>
+      <input type="radio" name="gender" value="m" checked> Mężczyzna<br>
+      <input type="radio" name="gender" value="f"> Kobieta<br>
+      <input type="radio" name="gender" value="a"> Alien<br>
+      <input type="radio" name="gender" value="o"> Inna
+</fieldset>
+
+<fieldset>
+  <legend>Wybierz pojazd</legend>
+  <input type="checkbox" name="vehicle1" value="Bike"> Rower<br>
+  <input type="checkbox" name="vehicle2" value="Car"> Samochód
+</fieldset>
+
+<select name="cars">
+ <option value="volvo">Volvo</option>
+ <option value="saab" selected>Saab</option>
+ <option value="fiat">Fiat</option>
+ <option value="audi">Audi</option>
+</select>
+
+<select name="cars2" multiple>
+ <option value="volvo">Volvo</option>
+ <option value="saab" selected>Saab</option>
+ <option value="fiat">Fiat</option>
+ <option value="audi">Audi</option>
+</select>
+
+<br>
+  <textarea name="message" rows="10" cols="30">
+    Wyżal się!
+  </textarea>
+<br>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
+</html>
