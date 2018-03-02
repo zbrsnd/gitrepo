@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-02T12:12:02+01:00
+
+====== BOOTSTRAP ======
+Created piątek 02 marzec 2018
+
+BOOTSTRAP DZIELI SIE NA 5 URZĄDZEŃ
+
+**EXTRA SMALL** - ozn. __xs lub brak oznaczenia  __<576px
+**SMALL** - ozn. __sm__    >=576px
+**MEDIUM** - ozn. __md__  >=768px
+**LARGE** - ozn. __lg__  >=992px
+**EXTRA LARGE** - ozn. __xl__ >=1200px
+
+//
+**m -** dla klas ustawiajacych margines
+**p  - **dla klas ustawiających padding
+
+polozenie
+t - top
+b - bottom 
+l - left
+r - right
+x - 
+y - 
+
+ROZMIAR
+0,1,2,**3**,4,5,6,7
+
+**3 - podstawowa jednostka**
+
+**auto **
