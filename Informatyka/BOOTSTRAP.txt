@@ -31,3 +31,5 @@ ROZMIAR
 **3 - podstawowa jednostka**
 
 **auto **
+
+**PSEUDOELEMENTY (CSS) - ** *::before

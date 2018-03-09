@@ -1,0 +1,14 @@
+
+
+body {
+background-image: url('porsche.jpg');
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+}
+
+/* style użytkownika */
+
+.mark, mark {
+  background-color: #50f4c0
+}
