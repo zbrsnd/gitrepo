@@ -9,13 +9,17 @@ function setup() {
 }
 
 function draw() {
+  
+    
   background(200);
   dx = mouseX - x
   dy = mouseY - y
   angle1 = atan2(dy, dx);
   x = mouseX - (cos(angle1) * 30);
   y = mouseY - (sin(angle1) * 30);
-
-  rect(x, y, 30, 30);
+    
+    fill('yellow');
+    rect(x, y, 70, 70);
+     
 
 }
