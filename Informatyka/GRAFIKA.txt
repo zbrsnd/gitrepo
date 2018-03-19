@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-19T09:53:55+01:00
+
+====== GRAFIKA ======
+Created poniedziałek 19 marzec 2018
+
+**MODELE KOLORÓW**
+	//RGB : //**red, green, blue**
+	//CMYK: //**cyjan, magenta, yellow**
+	//LAB//
+	//HSB: //**hue, saturate, brightness**
+	
+**PRZESTRZEŃ KOLORÓW //**
+
+**GRAFIKA RASTROWA - **zbudowana z punktów
+**GRAFIKA WEKTOROWA **
+
