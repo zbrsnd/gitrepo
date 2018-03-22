@@ -12,3 +12,17 @@ background-size: cover;
 .mark, mark {
   background-color: #50f4c0
 }
+
+.gallery {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.gallery-item {
+    margin: 20px;
+}
