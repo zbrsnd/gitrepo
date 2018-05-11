@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-04-13T12:21:20+02:00
+
+====== 123 ======
+Created piątek 13 kwietnia 2018
+
+"AMBITNA CZCIONKA" ~R.B.
+"Wiesz jak działają tajamałty?" ~R.B.
+"Font Ewesom" ~R.B.
