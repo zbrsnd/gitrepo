@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-07T13:44:00+02:00
+
+====== algorytmika ======
+Created piątek 07 września 2018
+
+===== C++ =====
+
+
+//BIBLIOTEKA STANDARDOWA //__<iostream>__ 
+
+
+=== PODSTAWOWE TYPY DANYCH ===
+**char **//(całkowite)//
+**int **//(liczby całkowite)//
+**long int **//(liczby całkowite, ale z większym zakresem)//
+**float **//(zmiennoprzecinkowe)//
+**double **//(zmiennoprzecinkowe)//
+**bool **//(logiczny)//
+
+**//std::** ← standardowa biblioteka
+**cin ← **wejście
+**cout ← **wyjście

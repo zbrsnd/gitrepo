@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-06T08:29:44+02:00
+
+====== programowanie ======
+Created czwartek 06 września 2018
+
+**Języki programowania niskiego poziomu - asemblery**
+__mnemoniki__ - 3 literowe skróty
+
+**Kod binarny (zerojedynkowy) / język maszynowy**
+0010111011(...)
+
+**lata 70 - **powstanie ważnych języków programowania, np. **C **(od niego wywodzi się **C++**)
+
+**KOMPILATOR **to program analizujący składnie poleceń, a następnie na jej podstawie tworzy kod maszynowy (zjawisko to nazywa się **kompilacją**)
+**LINKER **to program zajmujący się linkowaniem (łączeniem z wywołaniami systemowymi)
+
+**KOD ŹRÓDŁOWY → KOMPILACJA → LINKOWANIE**
+
+**KOD ŹRÓDŁOWY **jest interpretowany (__python, java, JS__)
+
+**ALGORYTM **to skończony ciąg czynności, przekształcający zbiór danych wejściowych na zbiór danych wyjściowych
+**ALGORYTMY NUMERYCZNE **- algorytmy, które wykonują działania matematyczne na danych liczbowych 
+**ALGORYTMY SEKWENCYJNE/LINIOWE **- algorytmy, w których kolejność czynności jest zawsze taka sama i niezależna od wartości danych wejściowych 
+
+
+__ELEMENTY SCHEMATU BLOKOWEGO__
+**BLOK GRANICZNY (ELIPSA) - **początek algorytmy
+**BLOK OPERACYJNY (PROSTOKĄT) **- operacje zmieniające wartości zmiennych
+**BLOK WEJŚCIA/WYJŚCIA (RÓWNOLEGŁOBOK) **- operacje wprowadzania i wyprowadzania danych
+**BLOK DECYZYJNY (ROMB) **- wybór jednej z dwóch możliwych dróg działania
+**BLOK GRANICZNY (ELIPSA) **- koniec algorytmu
+
+
