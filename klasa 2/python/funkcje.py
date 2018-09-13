@@ -3,9 +3,21 @@
 #
 #  szablon.py
 
-def dodaj():
-    print(a + b)
+#zasięg zmiennych: lokalny, globalny
 
+def dodaj(a, b):
+    return(a + b)
+
+def odejmij(a, b):
+    return(a - b)
+    
+def pomnoz(a, b):
+    return(a * b)
+    
+def podziel(a, b):
+    return(a / b)
+    
+            
 def main(args):
     #a = 0 #inicjacja zmiennej
     a = int(input('Podaj 1. liczbę: '))
@@ -13,18 +25,17 @@ def main(args):
     b = int(input('Podaj 2. liczbę: '))
     print(b)
     
-    dodaj()
-    
     suma = float(a) + float(b)
     roznica = float(a) - float(b)
     iloraz= float(a) / float(b)
     iloczyn = float(a) * float(b)
     
     
-    print('Suma:', suma)
-    print('Różnica:', roznica)
-    print('Iloraz:', iloraz)
-    print('Iloczyn:', iloczyn)
+    print('Suma:', dodaj(a, b))
+    print('Różnica:', odejmij(a, b))
+    print('Iloraz:', podziel(a, b))
+    print('Iloczyn:', pomnoz(a, b))
+    
     
    
     
