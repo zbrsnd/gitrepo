@@ -26,7 +26,7 @@ __mnemoniki__ - 3 literowe skróty
 
 
 __ELEMENTY SCHEMATU BLOKOWEGO__
-**BLOK GRANICZNY (ELIPSA) - **początek algorytmy
+**BLOK GRANICZNY (ELIPSA) - **początek algorytmu
 **BLOK OPERACYJNY (PROSTOKĄT) **- operacje zmieniające wartości zmiennych
 **BLOK WEJŚCIA/WYJŚCIA (RÓWNOLEGŁOBOK) **- operacje wprowadzania i wyprowadzania danych
 **BLOK DECYZYJNY (ROMB) **- wybór jednej z dwóch możliwych dróg działania

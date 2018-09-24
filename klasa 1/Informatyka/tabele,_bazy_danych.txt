@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-24T07:24:38+02:00
+
+====== tabele, bazy danych ======
+Created poniedziałek 24 września 2018
+
+**PROBLEMY Z TWORZENIEM BAZ DANYCH**
+
+1. Problem z optymalizacją
+2. Występowanie tzw. //"kolekcji wartości"  (KILKA TYPÓW DANYCH W JEDNEJ KOLUMNIE)//
+
+**NORMALIZACJA **to bezstratny proces organizowania danych w tabelach mający na celu zmniejszenie ilości danych składowanychw bazie oraz wyeliminowanie potencjalnych anomalii.
+
+**1NF tzw. 1 POSTAĆ NORMALNA **- pierwsza postać normalna to podstawa baz, **mówi o atomowości danych, tzn. **tabela przechowuje dane w sposób atomowy. 
+Każde pole przechowuje **JEDNĄ INFORMACJĘ**, dzięki czemu możemy dokonywać efektywnych zapytań.
+
+**2NF tzw. 2 POSTAĆ NORMALNA **- druga postać normalna mówi o tym, że każda tabela powinna przechowywać dane dot. **tylko konkretnej klasy obiektów. **
+
+**3NF tzw. 3 POSTAĆ NORMALNA **
+
