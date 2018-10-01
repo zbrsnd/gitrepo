@@ -19,3 +19,62 @@ Każde pole przechowuje **JEDNĄ INFORMACJĘ**, dzięki czemu możemy dokonywać
 
 **3NF tzw. 3 POSTAĆ NORMALNA **
 
+===== ______________________________________________________ =====
+
+
+===== WIĘZY SPÓJNOŚCI/INTEGRALNOŚCI (constrains) =====
+
+id **INTEGER PRIMARY KEY**
+**AUTONUMERIC** **←**  wartość pola nie może być wskazana przez użytkownika, jest ono numerowane automatycznie przez bazę
+**UNIQUE ← **unikalność wartości w kolumnie (nie definiuje on klucza głównego, ale sygnalizuje, że wartości w tej kolumnie powinny być niepowtarzalne)
+**NOT NULL ← **niedopuszczenie pustych wartości
+**DEFAULT ← **wartość domyślna, np. //"", 10% itd.//
+**FOREIGN KEY ← **definicja //klucza obcego//
+	
+	== nazwa_pola REFERENCES tabela(inne_pole) ==
+**CHECK num1 > num2 ←** testowanie wartości
+
+**ON DELETE CASCADE **←
+razem z wierszem tabeli nadrzędnej zostają usunięte wszystkie wiersze tabeli podrzędnej, w których wartości klucza obcego wskazują na usuwany wiersz
+(pod warunkiem, że usunięcie tych wierszy jest możliwe bez naruszenia innych więzów referencyjnych)
+
+**ON DELETE SET NULL/ SET DEFAULT**
+
+===== ______________________________________________________ =====
+
+
+===== TYPY DANYCH =====
+
+**NULL ← **wartości puste
+**INTEGER ←** wartości liczbowe całkowite
+**REAL **←
+**TEXT **← 
+**BLOB ← **
+**CHAR(20) **←
+**VARCHAR(20) **←
+**BOOLEAN (0 - FALSE, 1 - TRUE)**
+
+
+**KODOWANIE: UTF-8**
+
+===== ______________________________________________________ =====
+
+
+===== DATA TYPES =====
+
+**REAL ← **ustawione po Juliuszu Cezarze,, mówi ile dni upłynęło od konkretnej daty (NOV 24, 4714 B.C.)
+**TEXT ← **np.** ISO8601 (YYYY-MM-DD HH:MM:SS.SSS)**
+**INTEGER ← ** np. **UNIX TIME** -  duża liczba całkowita mówiąca ile sekund upłynęło od epoki linuxa
+
+
+
+
+
+
+
+
+
+
+
+
+
