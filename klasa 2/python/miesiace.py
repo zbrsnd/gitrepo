@@ -22,51 +22,18 @@ def pobierzMiesiac():
     wydrukuj podany numer oraz nazwy miesiaca
     """
     
-    miesiace = ['', 'styczen', 'luty', 'marzec', 'kwiecien', 'maj', 'czerwiec', 'lipiec', 'sierpien', 'wrzesien', 'pazdziernik', 'listopad', 'grudzien']
+    nazwa = ['', 'styczen', 'luty', 'marzec', 'kwiecien', 'maj', 'czerwiec', 'lipiec', 'sierpien', 'wrzesien', 'pazdziernik', 'listopad', 'grudzien']
     a = 3
-    
     while a > 0:
         a -= 1
         miesiac = int(input("podaj numer miesiąca: "))
+        
 		if miesiac > 12 or miesiac < 1:
 			print("Błędne dane! Wpisz raz: ")
 		else:
 			print (nazwa[miesiac])
 	return 0
 
-
-def main(args):
-
-    suma = 0
-    liczba = -1
-    
-    while liczba != 0:
-        liczba = int(input("Podaj liczbę: "))
-        while liczba < 0:
-            liczba = int(input("Błędne dane. Podaj liczbę: "))
-        suma += liczba
-    
-    print("Suma:", suma)    
-    
-    return 0
-
-
-
-def main(args):
-
-    suma = 0
-    liczba = -1
-    
-    while liczba != 0:
-        liczba = int(input("Podaj liczbę: "))
-        if liczba < 0:
-            print("Błędne dane!", end="")
-        else:
-            suma += liczba
-    
-    print("Suma:", suma)    
-    
-    return 0
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
