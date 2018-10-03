@@ -14,7 +14,7 @@
 
 
 
-def pobierzMiesiac():
+def main(nazwa):
     
     """
     napisz program ktory wczytuje z klawiatury poprawny numer miesiaca
@@ -27,12 +27,11 @@ def pobierzMiesiac():
     while a > 0:
         a -= 1
         miesiac = int(input("podaj numer miesiąca: "))
-        
-		if miesiac > 12 or miesiac < 1:
-			print("Błędne dane! Wpisz raz: ")
-		else:
-			print (nazwa[miesiac])
-	return 0
+        if miesiac > 12 or miesiac < 1 :
+            print("Błędne dane! Wpisz raz: ")
+        else:
+            print (nazwa[miesiac])
+    return 0
 
 if __name__ == '__main__':
     import sys
