@@ -8,7 +8,7 @@ import csv
 def dane_z_pliku(nazwa_pliku):
     dane = []  # pusta lista na dane
     with open(nazwa_pliku, 'r', newline='', encoding='utf-8') as plik:
-        tresc = csv.reader(plik, delimiter='\t')
+        tresc = csv.reader(plik, delimiter=';')
         for rekord in tresc:
             rekord = [x.strip() for x in rekord]  # usunięcie białych znaków
             dane.append(rekord)  # dodawanie rekordów do listy
@@ -28,13 +28,13 @@ def main(args):
     print(dane)
     dane.pop(0)  # usuwanie pierwszego elementu listy
     cur.executemany(
-        'INSERT INTO nazwiska VALUES(?, ?, ?, ?, ?, ?)', dane)
+        'INSERT INTO uczniowie VALUES(?, ?, ?, ?, ?, ?)', dane)
         
     dane = dane_z_pliku('przedmioty.txt')
     print(dane)
     dane.pop(0)  # usuwanie pierwszego elementu listy
     cur.executemany(
-        'INSERT INTO dane_osobowe VALUES(?, ?, ?, ?)', dane)
+        'INSERT INTO przedmioty VALUES(?, ?, ?, ?)', dane)
         
     dane = dane_z_pliku('oceny.txt')
     print(dane)

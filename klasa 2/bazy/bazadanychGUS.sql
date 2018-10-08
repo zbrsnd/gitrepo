@@ -3,11 +3,13 @@ DROP TABLE IF EXISTS mieszkancy;
 DROP TABLE IF EXISTS powierzchnie;
 
 
-CREATE TABLE miasta
+CREATE TABLE uczniowie
 (
-	id_miasta INTEGER PRIMARY KEY AUTOINCREMENT,
-	nazwa_miasta TEXT(30),
-	wojewodztwo TEXT(35)
+	IDucznia INTEGER PRIMARY KEY AUTOINCREMENT,
+	nazwisko TEXT(30),
+	ulica TEXT(35),
+    dom TEXT(35),
+    IDklasy VARCHAR(3) NOT NULL,
 );
 
 CREATE TABLE mieszkancy
