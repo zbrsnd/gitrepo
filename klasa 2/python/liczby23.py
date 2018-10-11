@@ -30,17 +30,17 @@ def liczby2():
 def liczby3():
 	
 	licznik = 0
-	for i in range(1,10):
-		for j in range(0,10):
-			for k in range(0,10):
+	for i in range(1,10): #cyfra setek
+		for j in range(0,10): #cyfra dziesiatek
+			for k in range(0,10): #cyfra jedności
 				if (i != j and i != k) and (j != i and j != k) and (k != i and k != j):
 					print("{}{}{} ".format(i,j,k), end='')
 					licznik = licznik + 1         
 	return licznik	
 
 def main(args):
-    print("Liczb 2-cyfrowych: ", liczby2())
-    print("Liczb 3-cyfrowych: ", liczby3())
+    print("\nLiczb 2-cyfrowych: ", liczby2())
+    print("\nLiczb 3-cyfrowych: ", liczby3())
     return 0
 
 if __name__ == '__main__':
