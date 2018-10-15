@@ -66,9 +66,26 @@ razem z wierszem tabeli nadrzędnej zostają usunięte wszystkie wiersze tabeli 
 **TEXT ← **np.** ISO8601 (YYYY-MM-DD HH:MM:SS.SSS)**
 **INTEGER ← ** np. **UNIX TIME** -  duża liczba całkowita mówiąca ile sekund upłynęło od epoki linuxa
 
+===== ______________________________________________________ =====
+
+
+**SELECT * FROM [...] LEFT JOIN [...] ON [...]. = [...]. WHERE [...] IS NULL ← **filtrowanie danych niewystępujących w jednej tabeli (?)
+
+**INNER JOIN [JOIN]**
+**LEFT JOIN [LEFT JOIN]**
+
+W dużym skrócie - **inner join A z B** zwróci dane z **części wspólnej** tabel A i B. A **left join** - zwróci **wszystkie dane z tabeli A oraz odpowiadające im dane z tabeli B**.
+
+Czyli, jak w A mamy wiersze o identyfikatorach 1,2,3,4, a w B mamy wiersze o identyfikatorach 3,4,5,6, to inner join zwróci wiersze o identyfikatorach 3,4 a left join - wiersze o identyfikatorach 1,2,3,4 z danymi z obu tabel.
+
+
+**GROUP BY [...] - **
 
 
 
+**WITH** zapytanie **AS** (**SELECT** customer_id, **COUNT**(subscription_id) **AS** 'subskrypcje' **FROM** orders **GROUP BY** customer_id)
+**SELECT** customers.name, zapytanie.subskrypcje **FROM** zapytanie **JOIN** customers **ON** zapytanie.customer_id = customers.id 
+**ORDER BY** subskrypcje **DESC**;
 
 
 
