@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  pentle_cw_1.py
+#  petle_cw_1.py
 #  
 # Program podaje liczby podane przez użytkownika, do momentu kiedy ich suma nie przekroczy 75. Na koniec drukuje sumę.
 
