@@ -19,10 +19,24 @@ void licz_znaki(char tb[], int roz)
     int i = 0;
     
     while (tb[i] != '\0') {
-        if (tb[i] == ' ' || tb[i] == '\t') biale++;
-        else if (tb[i] == ',' || tb[i] == '.') inter++;
-        else reszta++;
+        //~if (tb[i] == ' ' || tb[i] == '\t') biale++;
+        //~else if (tb[i] == ',' || tb[i] == '.') inter++;
+        //~else reszta++;
+        switch(tb[i]) {
+            case ' ':
+            case '/t':
+                biale++;
+            break;
+            case ',':
+            case '.':
+                inter++;
+            break;
+            default:
+                reszta++;
+        
+        }
         i++;
+        
     }
     cout << "Białych:" << biale << endl;
     cout << "Interpunkcyjnych:" << inter << endl;
