@@ -10,16 +10,17 @@ using namespace std;
 
 
 void zamien_znaki(char tb[], int roz) {
-    for (int i = 0; i < roz; i++) {
-        //zamień małe znaki na duże
-        kod ascii 'a' = 97
-        kod ascii 'A' = 65
-        97 - 65 = 32
-        (char)(kod_ascii - 32)
-        
-        }
-    
+    int i=0;
+    while(tb[i]!='\0') {
+        tb[i++]=(char)((int)tb[i]-32);
     }
+
+    i=0;
+    while(tb[i]!='\0') {
+        cout<<tb[i++];
+    }
+
+}
 
 
 
@@ -60,7 +61,8 @@ int main(int argc, char **argv)
     const int rozmiar = 20;
     char znaki[rozmiar];
     cin.getline(znaki, rozmiar);
-    licz_znaki(znaki, cin.gcount());
+    //~ licz_znaki(znaki, cin.gcount());
+    zamien_znaki(znaki,rozmiar)
 	return 0;
 }
 
