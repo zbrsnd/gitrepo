@@ -19,7 +19,8 @@ long int fibonacci_it(int n) {
         a = b;
         b = wynik;
         }
-    return wynik;    
+    return wynik; 
+    
     }
 
 int main(int argc, char **argv)
