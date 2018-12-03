@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-12-03T07:26:21+01:00
+
+====== środowisko wirtualne ======
+Created poniedziałek 03 grudnia 2018
+
+python3 -m venv pve3 ← aktywacja środowiska
+source [[~/pve3/bin/activate]]
+
