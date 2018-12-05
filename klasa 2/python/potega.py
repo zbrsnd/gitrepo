@@ -6,25 +6,32 @@
 # Obliczanie potęgi liczby naturalnej.
 
 
-def potega_it(a, n):
+# ~def potega_it(a, n):
     
-    wynik = 1
+    # ~wynik = 1
     
-    for i in range(n):
-        wynik = wynik * a
-        #print(wynik)
+    # ~for i in range(n):
+        # ~wynik = wynik * a
+        # ~#print(wynik)
         
-    return wynik   
+    # ~return wynik   
     
-    pass
+    # ~pass
+    
+def potega_rek(a, n):
+    if n == 0:
+        return 1
+    return potega_rek(a, n-1) * a
+    
+    
+    
 def main(args):
     
-    #a = int(input("Podaj podstawę potęgi")
+    #a = int(i nput("Podaj podstawę potęgi")
     #n = int(input("Podaj wykładnik potęgi")
-    a, n = 0, 2
+    a, n = 2, 3
     print("Podstawa {} do potęgi {} wynosi {} ".
-           format(a,n,potega_it(a,n)))
-    
+           format(a,n,potega_rek(a,n)))
     return 0
 
 if __name__ == '__main__':
