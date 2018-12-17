@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-   index.html
+   lista.html
 -->
 
 <head>
@@ -11,8 +11,13 @@
 </head>
 
 <body>
-    <h1>Witaj w Quizie!</h1>
-    <p>Sam to zrobiłem XD.</p>
+    <h1>Quiz - pytania</h1>
+    
+    {% for p in pytania %}
+        <li>
+            {{ p.pytanie }}
+        </li>
+    {% endfor %}
 </body>
 
 </html>
