@@ -43,17 +43,32 @@ void zamien1(int &a, int &b) {
     //~} 
 
 
+void sort_selection(int tab[], int n) {
+    
+    int i,k,j;
+    for(i = 0; i < n-1; i++) {
+        k = i; //indeks najmniejszego elementu
+        for (j = k+1; j < n; j++) {
+            if (tab[j] > tab[k]) 
+                k = j;
+            }
+        zamien1(tab[i], tab[k]);
+        }
+    }
+
 
 int main(int argc, char **argv)
 {
 	int roz = 20;
     int tab[roz];
     wypelnij(tab,roz);
-    drukuj(tab,roz);
+    //~drukuj(tab,roz);
     tab[0] = 7;
     tab[1] = 5;
     zamien1(tab[0], tab[1]);
     cout << tab[0] << " " << tab[1] << endl;
+    sort_selection(tab,roz);
+    drukuj(tab,roz);
 	return 0;
 }
 
