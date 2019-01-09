@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-   lista.html
--->
 
 <head>
 <meta charset="utf-8" />
@@ -11,13 +8,16 @@
 </head>
 
 <body>
-    <h1>Quiz - pytania</h1>
-    
+ <h2>Quiz - pytania</h2>
+    <ol>
     {% for p in pytania %}
-        <li>
-            {{ p.pytanie }}
-        </li>
+        
+        <li>{{ p.pytanie }}</li>
+        
     {% endfor %}
+    
+    <p><a href = "{{url_for('hello')}}"> Strona główna </a></p>
+    </ol>
 </body>
 
 </html>

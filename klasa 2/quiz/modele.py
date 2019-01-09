@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
   
-import os
 from peewee import * 
 
 baza_plik = 'quiz.db'
@@ -12,13 +11,16 @@ class BazaModel(Model):
     class Meta:
         database = baza
 
+class Kategoria(BazaModel):
+    kategoria = CharField(null = False, unique = True)
+
 
 class Pytanie(BazaModel):
-    pytanie = CharField(null=False, unique=True)
-    odpok = ForeignKeyField
-    
-class Odpowiedz(BazaModel):
-    pnr = ForeignKeyField(Pytanie, related_name ='odpowiedzi')
-    odpowiedz = CharField(null=False)
-    
+    pytanie = CharField(null=False)
+    kategoria = ForeignKeyField(Kategoria, related_name='pytania')
 
+
+class Odpowiedz(BazaModel):
+    odpowiedz = CharField(null=False)
+    pytanie = ForeignKeyField(Pytanie, related_name='odpowiedzi')
+    odp_ok = BooleanField(default=False)
