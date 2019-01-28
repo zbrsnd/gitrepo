@@ -4,6 +4,11 @@
 {% block h1 %}QUIZ:{% endblock %}
 {% block tresc %}
     <form method="POST">
+        
+        {{ form.csrf_token }}
+        {{ form.pytanie.label }} <br>
+        {{ form.pytanie(class='form-control') }} <br>
+        
         <ol>
         {% for p in pytania %}
             <li>
