@@ -1,0 +1,51 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-01-31T07:27:04+01:00
+
+====== Systemy liczbowe ======
+Created czwartek 31 stycznia 2019
+
+
+2. Systemy pozycyjne
+
+System o podstawie 10
+
+123(n) = a(n-1) * p^(n-1) + a(n-2) * p ^ (n-2) + ... + a1^p1 + a0^p0
+
+123(10) = 1* 10^2 + 2 * 10^1 + 3 * 10^0 = 123
+
+234(5) = 2 * 5^2 + 3 * 5^1 + 4*5^0 = 50 + 15 + 4 = 69
+
+234(7) = 2 * 7^2 + 3 *7^1 + 4*7^0 = 98 + 21 + 4 = 123
+
+System o podstawie 2
+
+1010 = 1*2^3
+
+
+KONWERSJA LICZBY DZIESIETNEJ
+
+dec2bin 129(10) -> 10000001(2) -> 128+1
+
+143/2 = 71 reszta 1
+71/2 = 35 reszta 1
+35/2 = 17 reszta 1
+17/2 reszta 1
+8/2 = 4 reszta 0
+4/2 = 2 reszta 0
+2/2 = 1 reszta 0
+1/2 = 0 reszta 1
+
+Czytając reszty OD DOŁU uzyskujemy liczbę binarną: 143 = 10001111 
+
+237(2):
+237/2 = 118 reszta 1
+118/2 = 59 reszta 0
+59/2 = 29 reszta 1
+29/2 = 14 reszta 1
+14/2 = 7 reszta 0
+7/2 = 3 reszta 1
+3/2 = 1 reszta 1
+1/2 = 0 reszta 1
+
+237 = 11101101
