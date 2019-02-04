@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!--
+   szablon.html
+-->
+
+<head>
+<meta charset="utf-8" />
+    <title>{% block tytul %}{% endblock %}</title>
+    <style type = "text/css">
+        .info {
+            font-size: 20px;
+            padding: 5px;
+            color: black;
+            border: 1px solid green;
+            }
+        #menu li {
+            display: inline;
+            margin-left: 2em;
+            }
+    </style>
+</head>
+
+<body>
+    
+    <div id = "menu">
+        <ol>
+            <li><a href="{{ url_for('hello') }}">Strona główna</a></li>
+            <li><a href="{{ url_for('lista') }}">Lista</a></li>
+            <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
+        </ol>
+    </div>
+    
+    <h1>{% block h1 %}{% endblock %}</h1>
+    
+    {% with komunikaty  = get_flashed_messages(with_categories=true) %}
+    {% if komunikaty %}
+        {% for kat, kom in komunikaty%}
+            <p class ="{{ kat }}"> {{ kom }}</p>
+        {% endfor%}
+    {% endif%}
+    {% endwith%}
+
+    {% block tresc %}{% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{% extends "szablon.html"%}
+{% block tytul%}Quiz – Błąd{% endblock%}
+{% block h1%} Brak takiego zasobu{% endblock%}
+{% block tresc%}
+    <div class="alert-warning">
+        Przykro nam, ale podany zasób nie istnieje.
+        Przejdź do <a href="{{ url_for('index') }}">Strony Głównej</a>.
+    </div>
+
+{% endblock%}

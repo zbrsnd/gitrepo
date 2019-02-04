@@ -1,24 +1,22 @@
-
-{% extends "szablon.html" %}
-{% block tytul %}QUIZ{% endblock %}
-{% block h1 %}QUIZ:{% endblock %}
-{% block tresc %}
-    <form method="POST">
+{% extends "szablon.html"%}
+{% block h1%}Aplikacja QUIZ - rozwiąż quiz{% endblock%}
+{% block tresc%}
+<form method="POST">
         <ol>
         {% for p in pytania %}
             <li>
                 {{ p.pytanie }}
                 <ol>
                     {% for o in p.odpowiedzi %}
-                    <li>
-                        <input type="radio" name="{{ p.id }}" value="{{ o.id }}">
-                        {{ o.odpowiedz }}</li>
+                        <ol>
+                            <input type="radio" name="{{ p.id }}" value="{{ o.id }}">
+                            {{ o.odpowiedz }}
+                        </ol>
                     {% endfor %}
                 </ol>
             </li>
         {% endfor %}
         </ol>
-        
+
         <input type="submit" value="Prześlij">
-</form>
-{% endblock %}
+    </form>{% endblock%}

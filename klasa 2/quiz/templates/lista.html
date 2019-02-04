@@ -1,17 +1,11 @@
-{% extends "szablon.html" %}
-{% block tytul %}QUIZ - Strona główna{% endblock %}
-{% block h1 %}QUIZ - Pytania{% endblock %}
-{% block tresc %}
-
-
-
-    <ol>
+{% extends "szablon.html"%}
+{% block tytul%}Quiz – Lista{% endblock%}
+{% block h1%} Quiz – pytania {% endblock%}
+{% block tresc%}
+<ol>
     {% for p in pytania %}
-        
-        <li>{{ p.pytanie }}</li>
-        
+        <li>
+            {{ p.pytanie }}
+        </li>
     {% endfor %}
-    
-    </ol>
-{% endblock %}
-
+    </ol>{% endblock%}
