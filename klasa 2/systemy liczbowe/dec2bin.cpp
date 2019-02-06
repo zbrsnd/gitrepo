@@ -7,7 +7,7 @@
 #include <cmath>
 using namespace std;
 
-
+int cyfry[16] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 65, 66, 67, 68, 69, 70};
 // 127/podstawa wynik reszta r
 
 
@@ -28,43 +28,46 @@ void any2dec(int tab[]) {
     
     int podstawa = 0;
     do {
-        cout << "Podstawa <2;9>" << endl;
+        cout << " Podstawa <2;9> ";
         cin >> podstawa;
         } while (podstawa < 2 || podstawa > 9);
         
     int ile = 0;
-    cout << "Ile cyfr? "; cin >> ile >> endl;
+    cout << "Ile cyfr? "; 
+    cin >> ile;
     for (int i = 0; i < ile; i++)
         do {
             cout << "Podaj cyfrę (0-" << podstawa-1 << "): ";
-            cin >> tab[i]
-            } while (tab[i] < 0 || tab[i] > podstawa;
+            cin >> tab[i];
+            } while (tab[i] < 0 || tab[i] > podstawa-1);
             
     //konwersja na sytem dziesiętny
-    liczba10 = 0;
-    for(int i = 0;; i < ile; i++) {
-        tab[i] * liczba
-        i++;
-        liczba10++;
-        }
-    
+    int liczba10 = 0;
+    for(int i = 0; i < ile; i++) {
+        liczba10 += pow(podstawa, tab[i] - 1 - i);
     
     }
+}
     
 int main(int argc, char **argv)
-{
+{   
 	int tab[8];
     int liczba, podstawa;
-    cout << "Podaj liczbę i podstawę systemu docelowego: " << endl;
+    cout << "Podaj liczbę i podstawę systemu docelowego: ";
     cin >> liczba >> podstawa;
     int i = dec2any(liczba, podstawa, tab);
     cout << "Wynik: ";
     while (i >= 0) {
-        cout << tab[i];
+        if (podstawa > 9)
+            cout << cyfry[tab[i]];
+        else
+            cout << tab[i];
         i--;
-        }
-    
-    
-	return 0;
+    }
+    cout << endl;
+    any2dec(tab);
+    return 0;
 }
+
+
 
