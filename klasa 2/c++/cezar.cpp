@@ -11,17 +11,33 @@ using namespace std;
 
 
 
-void szyfruj(int klucz, char tekst[], int ilosc, int kod) {
+void szyfruj(int klucz, char tekst[]) {
     klucz = klucz % 26;
-    for(int i = 0; i < ilosc ; i++) {
-        cout << tekst[i];
-        tekst[i] = tekst[i+1];
-        kod = (int)tekst[i];
-        cout << kod;
-        
+    int kod = 0;
+    int i = 0;
+    while (tekst[i] != '\0') {
+        kod = (int)tekst[i] + klucz;
+        if (tekst[i] == ' ') {
+            kod -= klucz;
         }
-    
+        else if (kod > 122) {
+            kod  =- 26;
+        }
+        cout << (char)(kod);
+        tekst[i] = (char)(kod);
+        i++;
+    }
+                
+      
+     //~for(int i = 0; i < ilosc ; i++) {
+        //~cout << tekst[i];
+        //~kod = (int)tekst[i+klucz];
+        //~cout << kod;
+        //~}
+                
 }
+    
+
 
 
 int main(int argc, char **argv)
@@ -29,12 +45,11 @@ int main(int argc, char **argv)
     char tekst[MAKS];
     cout << "Podaj tekst ułożony z małych liter:\n" << endl;
     cin.getline(tekst, MAKS);
-    int ilosc = strlen(tekst);                                                                    
+    //~int ilosc = strlen(tekst);                                                                    
 	int klucz;
-    int kod;
     cout << "Podaj klucz" << endl;
     cin >> klucz;
-    szyfruj(klucz, tekst, ilosc, kod);
+    szyfruj(klucz, tekst);
 	return 0;
 }
 
