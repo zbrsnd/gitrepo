@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel><item><title><![CDATA[bs_dropdown_menu]]></title><slug>bs_dropdown_menu</slug><value><![CDATA[&lt;?php if (!$item-&gt;hasChildren) { ?&gt;
+    &lt;li class=&quot;nav-item &lt;?php echo $item-&gt;classes; echo ($item-&gt;isCurrent)?&#039; active&#039;:&#039;&#039;; ?&gt;&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;&lt;?php echo htmlspecialchars($item-&gt;link); ?&gt;&quot;&gt;
+            &lt;?php echo htmlspecialchars($item-&gt;text); echo ($item-&gt;isCurrent)?&#039; &lt;span class=&quot;sr-only&quot;&gt;(aktualna)&lt;/span&gt;&#039;:&#039;&#039;;?&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+
+&lt;?php } else {?&gt;
+
+    &lt;li class=&quot;nav-item dropdown &lt;?php echo $item-&gt;classes; echo ($item-&gt;isCurrent)?&#039; active&#039;:&#039;&#039;; ?&gt;&quot;&gt;
+        &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;navbardrop&quot; data-toggle=&quot;dropdown&quot;&gt;
+            &lt;?php echo htmlspecialchars($item-&gt;text); echo ($item-&gt;isCurrent)?&#039; &lt;span class=&quot;sr-only&quot;&gt;(aktualna)&lt;/span&gt;&#039;:&#039;&#039;;?&gt;
+        &lt;/a&gt;
+
+        &lt;div class=&quot;dropdown-menu&quot;&gt;
+
+                &lt;?php
+                $pages = return_i18n_pages();
+                echo &#039;&lt;a class=&quot;dropdown-item&quot; href=&quot;&#039;.htmlspecialchars($item-&gt;link).&#039;&quot;&gt;&#039;.htmlspecialchars($item-&gt;text).&#039;&lt;/a&gt;&#039;;
+                foreach (@$pages[$item-&gt;slug][&#039;children&#039;] as $child){
+                    echo &#039;&lt;a class=&quot;dropdown-item&quot; href=&quot;&#039;.find_url($child, null).&#039;&quot;&gt;&#039;.$pages[$child][&#039;menu&#039;].&#039;&lt;/a&gt;&#039;;
+                }
+
+                ?&gt;
+
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;?php }?&gt;]]></value></item><item><title><![CDATA[linki]]></title><slug>linki</slug><value><![CDATA[&lt;div class=&quot;bg-white p-4&quot;&gt;
+
+&lt;h3 class=&quot;sidebar-heading text-dark&quot;&gt;Odwiedź również&lt;/h3&gt;
+
+ &lt;ul class=&quot;categories&quot;&gt;
+
+&lt;li class=&quot;text-dark&quot;&gt;&lt;a href=&quot;#&quot;&gt;strona główna&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;text-dark&quot;&gt;&lt;a href=&quot;#&quot;&gt;materiały&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;text-dark&quot;&gt;&lt;a href=&quot;#&quot;&gt;linki&lt;/a&gt;
+&lt;/ul&gt;
+&lt;/div&gt;]]></value></item><item><title><![CDATA[Sidebar]]></title><slug>sidebar</slug><value><![CDATA[&lt;h2&gt;GetSimple Features&lt;/h2&gt;
+&lt;ul&gt; 
+&lt;li&gt;XML based data storage&lt;/li&gt; 
+&lt;li&gt;Best-in-Class User Interface&lt;/li&gt; 
+&lt;li&gt;&#039;Undo&#039; protection &amp;amp; backups&lt;/li&gt; 
+&lt;li&gt;Easy to theme&lt;/li&gt; 
+&lt;li&gt;Great documentation&lt;/li&gt; 
+&lt;li&gt;Growing community&lt;/li&gt; 
+&lt;/ul&gt;
+&lt;p&gt;This is your sidebar text. Please change me in &lt;em&gt;Theme -&gt; Edit Components&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://get-simple.info/download/&quot;&gt;Download the Latest GetSimple&lt;/a&gt;&lt;/p&gt;]]></value></item><item><title><![CDATA[Tagline]]></title><slug>tagline</slug><value><![CDATA[Just Another GetSimple Website]]></value></item></channel>

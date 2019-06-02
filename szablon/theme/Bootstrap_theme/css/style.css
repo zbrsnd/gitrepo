@@ -1,0 +1,13 @@
+body{
+	background-color: #343a40;
+}
+
+footer a, aside a {
+	color: #343a40;
+}
+
+footer a:hover, aside a:hover{
+	color: #343a40;
+	text-decoration: none;
+	font-weight: bold;
+}
