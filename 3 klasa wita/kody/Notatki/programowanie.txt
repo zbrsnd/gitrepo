@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-06T08:08:03+02:00
+
+====== programowanie ======
+Created czwartek 06 września 2018
+
+**Języki programowania niskiego poziomu - asemblery**
+//mnemoniki// - 3 literowe skróty
+
+**Kod binarny (zerojedynkowy) / język maszynowy**
+0010111011(...)
+
+**lata 70 - **powstanie ważnych języków programowania, np. **C **(od niego wywodzi się **C++**)
+
+**KOMPILATOR **to program analizujący składnie poleceń, a następnie na jej podstawie tworzy kod maszynowy (zjawisko to nazywa się **kompilacją**)
+**LINKER **to program zajmujący się linkowaniem (łączeniem z wywołaniami systemowymi)
+
+**KOD ŹRÓDŁOWY → KOMPILACJA → LINKOWANIE**
+
+**KOD ŹRÓDŁOWY **jest interpretowany (//python, java, JS//)
+

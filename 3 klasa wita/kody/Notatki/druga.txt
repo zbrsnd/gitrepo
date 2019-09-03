@@ -1,0 +1,219 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-17T11:59:08+01:00
+
+====== druga ======
+Created środa 17 styczeń 2018
+2 sposoby zapisywania liczb:
+
+Systemy addytywne
+
+System liczbowy rzymski
+1 ⇒ I
+2
+MMXVIII
+MDXXX
+MCCCLXIV
+
+Systemy pozycyjne 
+233123
+234(6)=2*6^2 + 3*6^1 + 4*6^0=94
+234(5)=2*5^2 + 3*5^1 + 4*5^0=69
+
+1111(2)=8+4+2+1=15
+10010011=128+16+2+1=147
+
+8bit=krótke słowo(1bajt)maks 255 (10)
+16bit=słowo(2bajty)
+32bit = długie słowo(4bajty)
+64bit=poczwórne(8bajt)
+
+0,9,A,B,C,D,E,F
+111111111(2)=255(10)=FF(16)
+
+
+====== Konwersja liczby dziesiętnej ======
+dec2bin(konwersja liczby dziesiętnej na binarną)  10 ⇒2
+129/2=64 reszty 1 
+64/2=32 reszty 0
+32/2=16 reszty 0
+16/2 = 8 reszty 0
+8/2 = 4 reszty 0
+4/2 = 2 reszty 0
+2/2 = 1 reszty 0
+1/2 = 0 reszty 1
+129(10)=10000001(2) ⇒ 128 + 1 =129
+
+174(10)= 10101110(2) ⇒ 1*2^7 + 1*2^5+1*2^3+1*2^2+2^1+1 = 128+32+8+4+2=174  
+174/2=87 r 0
+87/2=43 r 1 
+43/2=21 r 1
+21/2=10 r 1
+10/2=5 r 0
+5/2=2 r 1
+2/2=1 r 0
+1/2 = 0 r 1
+
+
+inny sposób
+
+10101110
+174(10)-128=46
+46-32= 14
+14 - 8 = 6
+6-4 = 2
+2-2 =  0
+
+
+174(10) ⇒256(8) ⇒ 2*64  + 5*8 + 6 = 174
+174/8 = 21 r 6
+21/8 = 2 r 5 
+2/8 = 0 r 2 
+
+
+
+str.isdigit()- sprawdza czy podany łańcuch jest cyfrą 
+sekwencje.reverse()-odwórcenie kolejności elementów
+str.join("łącznik)-łączy znaki za pomocą łącznika
+int()- konwersja na liczbę całkowitą
+str()-konwersja na napis
+
+ord(znak)-kod ASCII znaku
+chr(kod_ASCII)- zwraca znak o podanym kodzie
+len(sekwencje)-długość sekwencji
+SEKWENCJE(ang.iterable)- są to napisy(str)listy,słowniki itp .
+
+
+S.O.S --- 000 111 000 
+
+bitrate (przepływność danych)- ilość informacji przesyłachnych w ciągu sekundy
+MP3 -128 b/s
+CD 256 b/s
+
+the rain in spain falls mainly on the plain.<44 bajty>
+The rain  <3,3> Sp<9,4>falls m<11,3>ly on t<34,3>, 3>pl<15,3> = <33 bajty>
+ 
+współczynnik kompresji = dane skompresowane / dane nieskompresowane
+33/44 = 75 %
+
+
+====== Szyfrowanie ======
+
+
+Szyfrowanie polega na ukryciu danych, czyli tekstu jawnego 
+Otrzymujemy w ten sposób **Szyfrogramy**
+
+
+
+====== Rodzaje szyfrów ======
+Szyfr cezara
+
+Szyfr przestawieniowy
+TOBEORNOTTOBETHATISTHEQUESTIONAND
+TOBEORNOTT
+OBETHATIST
+HEQUESTION
+AND.......
+
+TOEAOBENBEQDETU.OHE.
+
+
+
+
+
+3.Szyfrowanie asymetryczne
+szyfrowanie stron internetowych
+		   protokół HTTPS - szyfrowanie danych przy pomocy protokołu SSL(),które nazywa sie teraz TLS
+	  -certyfikat
+-szyfrowanie poczty za pomocą Pretty Good Privacy
+
+Klucz publiczny -ciag liczb który podajemy do publicznej wiadomości 
+
+
+Architektura Von Neumanna
+
+1 Pierwszym składnikiem budowy komputera jest procesor -jednostka arytmetyczna
+2. Napięcie od 3-5 v w proceszorze daje logiczną 1 ,jednak gdy jest około 0,2V daje logicznie 0
+3. Procesor składa się z rejestrów (np akumulatorów) komórek w kótrych są różne dane 
+Rozmiary rejestrów współczesnych procesorów to 64-bity 
+Pamięć RAM -swobodnego dostępu 
+Jednostka sterująca -synchornizuje pracę logicznych części komputera .Łączy się za pomocą szyny systemowej
+Szyna danych -szyna służąca do przesyłania danych 
+szyna taktująca 
+szyna adresowa -decyduje gdzie trafiają dane 
+Pamięć ROM-po wyłączneniu komputera dalej znajdują sie dane 
+5.Urządzenia wejściowe i wyjścia 
+twarde dyski
+myszka
+drukarka
+projektor
+monitor
+klawiatura 
+etc.
+
+
+Otwarty system opracyjny
+
+Architektura AMD 64-bit 
+Procesory AMr
+Hardwear
+Softwear
+User
+
+Pierwszy składnik
+Jądro
+Sterowniki urządzeń zewnętrznych
+Wirtualizuje sprzęt 
+zarządzanie zasobami sprzętu 
+Interface
+
+MS-DOS
+\oznacza katalog głowny
+w linuxie - ls/
+w dosie - dir/:\
+.. - pzoziom do góry w dosie (w linuxie tak samo()
+w windowsie pliki muszą mieć rozszerzenia 
+
+w linuxie nie muszą być 
+
+atrybuty
+a - pliki zapisane na dysku
+r- plik tylko do odczytu
+h- plik ukryty
+s- plik systemowy 
+tryb rzeczywisty procesora
+
+
+system własnościowy i zamknięty 
+zamknięty -windows, apple
+własnościowy
+
+
+open source - linux 
+Dystrybucja linuxa składa się z jądra oraz oprogramowania dodatkowego 
+
+
+
+
+
+hostem może być każde urządzenie 
+switch -przełącznik sieciowy 
+Wan - wide area network 
+każdy komputer posiada adres IP
+polecenie ping 
+top level domeny
+adres url
+poddomeny
+https://pl.wikipedia.org/wiki/Domena_internetowa
+https://pl.wikipedia.org/wiki/Subdomena
+https://pl.wikipedia.org/wiki/Uniform_Resource_Locator
+porty o numerach  0 1000 to porty dobrze znane (mają swoje nazwy)
+3 pierwsze cyfry adres sieci (IP)
+router zamienia adresy lokalne na adresy publiczne 
+
+network adress translation
+
+
+
+
+

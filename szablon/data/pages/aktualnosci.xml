@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<item><pubDate>Fri, 31 May 2019 10:29:07 +0200</pubDate><title><![CDATA[Aktualności]]></title><url><![CDATA[aktualnosci]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Aktualności]]></menu><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;Tutaj będą aktualności, czyli co dzieje się w naszej klasie.&lt;/p&gt;
-
-&lt;p&gt;&lt;button class=&quot;btn btn-primary&quot;&gt;dalej&lt;/button&gt;&lt;/p&gt;
-]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author><menuOrder><![CDATA[1]]></menuOrder></item>

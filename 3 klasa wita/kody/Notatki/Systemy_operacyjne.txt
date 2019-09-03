@@ -1,0 +1,55 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-07T07:25:22+01:00
+
+====== Systemy operacyjne ======
+Created czwartek 07 marca 2019
+
+**Partycje główne, partycje rozszerzone**
+**TABLICA** **FAT** - tylko 4 główne partycje
+**GPT** - nowszy system partycjonowania, nie ma podziału na główne i rozszerzone, dowolna ilość partycji
+**MBR (Master Boot Record)** - część sektorów na dysku twardym, w których zapisana jest informacja, z której partycji należy uruchamiać komputer
+**Partycja rozruchowa, aktywna** - partycja, z której uruchamia się system
+Szyfrowanie dysku odbywa się po to, aby nikt nie miał dostępu do naszych danych
+**PARTYCJA ROOT** - główny katalog systemowy
+W linuxie wszystkie urządzenia widziane są jako (wirtualne) pliki (**/dev/sda/1**)
+**dev** - device 
+**sd** - solid disc
+**a,b,c** - oznaczanie kolejności 
+**1,2,3** - numer partycji
+
+**LINUX** - ext4
+**WINDOWS** - NTFS
+
+**BTRFS** - umożliwia łatwe tworzenie kopii zapasowych plików
+
+**MONTOWANIE - **polega na dołączeniu zasobu dyskowego do struktury plików
+W Linuxie montowane jest dosłownie wszystko
+
+**KERNEL HIDDERS**
+**BOOT LOADER**
+**PLIK FSA - **odpowiada za montowanie partycji
+
+**POWŁOKA W WINDOWSIE - **command, polecenie** /cmd**
+POWŁOKA W WINDOWIE (nowa) - **POWERSHELL**
+**BASH**
+
+**UUID - **identyfikator partycji
+
+**linux + toolchain**
+**toolchain **to zestaw podstawowego oprogramowania do tworzenia innego oprogramowania, tzn.
+kompilator, linter, biblioteki, debugger.
+
+
+
+~~~~~~~~~~~~~~~`
+
+
+=== PROTOKÓŁ SIECIOWY - zestaw zasad, które opisują, jak się komunikować ===
+**HTTPS -> HTTP + TLS **
+
+
+mo2aFQ        
+
+C:\UwAmp\www\gs2
+

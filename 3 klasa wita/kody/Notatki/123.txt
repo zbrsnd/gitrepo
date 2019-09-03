@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-06T10:27:40+01:00
+
+====== 123 ======
+Created środa 06 marca 2019
+
+Ala ma kota a kot ma mleko 26
+Ala ma kota a <7,3><14,2>mle<10,2>
